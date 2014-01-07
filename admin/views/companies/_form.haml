@@ -1,0 +1,43 @@
+- error = @company.errors.include?(:name)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :name, :class => 'control-label'
+  .controls
+    =f.text_field :name, :class => 'form-control input-large input-with-feedback', :autofocus => true
+    %span.help-inline=error ? f.error_message_on(:name, :class => 'text-error') : pat(:example)
+- error = @company.errors.include?(:address)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :address, :class => 'control-label'
+  .controls
+    =f.text_field :address, :class => 'form-control input-large input-with-feedback'
+    %span.help-inline=error ? f.error_message_on(:address, :class => 'text-error') : pat(:example)
+- error = @company.errors.include?(:city)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :city, :class => 'control-label'
+  .controls
+    =f.text_field :city, :class => 'form-control input-large input-with-feedback'
+    %span.help-inline=error ? f.error_message_on(:city, :class => 'text-error') : pat(:example)
+- error = @company.errors.include?(:country)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :country, :class => 'control-label'
+  .controls
+    =f.text_field :country, :class => 'form-control input-large input-with-feedback'
+    %span.help-inline=error ? f.error_message_on(:country, :class => 'text-error') : pat(:example)
+- error = @company.errors.include?(:email)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :email, :class => 'control-label'
+  .controls
+    =f.text_field :email, :class => 'form-control input-large input-with-feedback'
+    %span.help-inline=error ? f.error_message_on(:email, :class => 'text-error') : pat(:example)
+- error = @company.errors.include?(:phone)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :phone, :class => 'control-label'
+  .controls
+    =f.text_field :phone, :class => 'form-control input-large input-with-feedback'
+    %span.help-inline=error ? f.error_message_on(:phone, :class => 'text-error') : pat(:example)
+
+.form-actions
+  =f.submit pat(:save), :class => 'btn btn-primary'
+  &nbsp;
+  =f.submit pat(:save_and_continue), :class => 'btn btn-info', :name => 'save_and_continue'
+  &nbsp;
+  =link_to pat(:cancel), url(:companies, :index), :class => 'btn btn-default'

@@ -1,0 +1,25 @@
+- error = @director.errors.include?(:company_id)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :company_id, :class => 'control-label'
+  .controls
+    =f.text_field :company_id, :class => 'form-control input-large input-with-feedback', :autofocus => true
+    %span.help-inline=error ? f.error_message_on(:company_id, :class => 'text-error') : pat(:example)
+- error = @director.errors.include?(:forename)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :forename, :class => 'control-label'
+  .controls
+    =f.text_field :forename, :class => 'form-control input-large input-with-feedback'
+    %span.help-inline=error ? f.error_message_on(:forename, :class => 'text-error') : pat(:example)
+- error = @director.errors.include?(:surname)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :surname, :class => 'control-label'
+  .controls
+    =f.text_field :surname, :class => 'form-control input-large input-with-feedback'
+    %span.help-inline=error ? f.error_message_on(:surname, :class => 'text-error') : pat(:example)
+
+.form-actions
+  =f.submit pat(:save), :class => 'btn btn-primary'
+  &nbsp;
+  =f.submit pat(:save_and_continue), :class => 'btn btn-info', :name => 'save_and_continue'
+  &nbsp;
+  =link_to pat(:cancel), url(:directors, :index), :class => 'btn btn-default'
