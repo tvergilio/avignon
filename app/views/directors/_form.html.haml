@@ -1,0 +1,23 @@
+- form_for :director, '/director/create'  do |f|
+= f.text_field :forename 
+= f.text_field :surname
+  - f.fields_for :company do |company_form| 
+    = company_form.label :name 
+    = company_form.text_field :name
+    = company_form.label :address
+    = company_form.text_field :address
+    = company_form.label :city
+    = company_form.text_field :city
+	= company_form.label :country
+    = company_form.text_field :country
+    = company_form.label :email
+    = company_form.text_field :email
+    = company_form.label :phone
+    = company_form.text_field :phone
+    - unless company_form.object.new_record? 
+      = company_form.check_box '_destroy' 
+      = company_form.label '_destroy', :caption => 'Remove' 
+= submit_tag "Save"
+
+
+

@@ -1,4 +1,4 @@
-Avignon::App.controllers :companies do
+Avignon::App.controllers :directors do
   
   # get :index, :map => '/foo/bar' do
   #   session[:foo] = 'bar'
@@ -18,25 +18,18 @@ Avignon::App.controllers :companies do
   # get '/example' do
   #   'Hello world!'
   # end
+  get '/example' do
+    render 'directors/_form.html'
+  end
   
   get :index do
-	@companies = Company.all(:order => 'name')
-    render 'companies/index'
-
+  @directors = Director.all(:order => 'created_at desc')
+  render 'directors/index'
   end
 
-  get :show, :with => :id do
-  @company = Company.find_by_id(params[:id])
-    render 'companies/show'
-
-  end
-  
-  get:new do
-  redirect('admin/companies/new')
-  end
-  
-  get :edit, :with => :id do
-  redirect('admin/companies/edit/#{:id}')
+	get :show, :with => :id do
+    @director = Director.find_by_id(params[:id])
+    render 'directors/show'
   end
 
 end
