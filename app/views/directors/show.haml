@@ -1,5 +1,6 @@
 - @surname = @director.surname
 #show
   .director
-  .forename= @director.forename + " " + surname= @director.surname    
+  .forename= @director.forename + " " + surname= @director.surname   
+%p= link_to 'Upload PDF', url_for('directors/attach')  
 %p= link_to 'View all directors', url_for(:directors, :index)

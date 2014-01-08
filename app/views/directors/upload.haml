@@ -1,0 +1,6 @@
+%form{:action=>"/upload",:method=>"post"   ,:enctype=>"multipart/form-data"}
+	%script{:type => "text/javascript"}
+		var postData = $('#ProfileLoginForm').serialize() + '&authenticity_token=' + CSRF_TOKEN;
+		configureCSRF();
+	%input{:type=>"file",:name=>"file"}
+	%input{:type=>"submit",:value=>"Upload"}

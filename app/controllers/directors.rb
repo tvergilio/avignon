@@ -31,5 +31,21 @@ Avignon::App.controllers :directors do
     @director = Director.find_by_id(params[:id])
     render 'directors/show'
   end
+  
+  get '/attach' do
+  render 'directors/upload' 
+  end
+  
+  post '/upload', :csrf_protection => false do
+  unless params[:file] &&
+           (tmpfile = params[:file][:tempfile]) &&
+           (name = params[:file][:filename])
+      @error = "No file selected"
+      return haml(:upload)
+		end
+      directory = "public/files"
+      path = File.join(directory, name)
+      File.open(path, "wb") { |f| f.write(tmpfile.read) }
+end
 
 end
