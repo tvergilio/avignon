@@ -17,7 +17,9 @@ gem 'rake'
 gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'haml'
 gem 'activerecord', '>= 3.1', :require => 'active_record'
-gem 'sqlite3'
+group :development, :test do
+  gem 'sqlite3'
+end
 
 # Test requirements
 
