@@ -6,7 +6,9 @@
     .city= @company.city
     .country= @company.country
     .email= @company.email	
-    %p
+    %p= 'Directors: '
+    .directors= @company.directors
+
     %p= link_to 'Edit', url_for('admin/companies/edit/' + params[:id].to_s)
     %p
     %p= link_to 'View all companies', url_for(:companies, :index)

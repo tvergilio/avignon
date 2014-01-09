@@ -1,6 +1,9 @@
 - @surname = @director.surname
+- @company = Company.find(@director.company_id)
 #show
   .director
-  .forename= @director.forename + " " + surname= @director.surname   
+  .forename= @director.forename + " " + surname= @director.surname  
+%span= 'Company: '
+%span= link_to @company.name, url_for(:companies, :show, :id => @company)
 %p= link_to 'Upload PDF', url_for('directors/attach')  
 %p= link_to 'View all directors', url_for(:directors, :index)
