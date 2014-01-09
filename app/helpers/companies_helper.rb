@@ -9,6 +9,10 @@ Avignon::App.helpers do
 		return data.to_csv if type.downcase.eql? 'text/csv'
 		return data.to_json
 	end
-  end 
+  end
+
+  def edit
+    @company = Company.find(params[:id])
+  end
   
 end

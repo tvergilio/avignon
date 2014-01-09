@@ -10,7 +10,8 @@
 <% @company.directors.each do |director| %>
     <table>
         <tr>
-            <td><%= director.forename + ' ' + director.surname %></td>
+            <td><%= link_to director.forename + ' ' + director.surname, director %></td>
+
         </tr>
     </table>
 <% end%>

@@ -59,7 +59,8 @@ module Avignon
     #   end
     #
 	get "/" do
-    "Hello World!"
+    #"Hello World!"
+    redirect_to "companies/index"
 	end
 
 	get :about, :map => '/about_us' do

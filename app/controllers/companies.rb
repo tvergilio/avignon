@@ -31,7 +31,7 @@ Avignon::App.controllers :companies do
 
   end
   
-  get:new do
+  get :new do
   redirect('admin/companies/new')
   end
   

@@ -29,6 +29,7 @@ Avignon::App.controllers :directors do
 
 	get :show, :with => :id do
     @director = Director.find_by_id(params[:id])
+    @company = Company.find(@director.company_id)
     render 'directors/show'
   end
   
