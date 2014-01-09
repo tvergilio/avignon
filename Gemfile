@@ -20,7 +20,9 @@ gem 'activerecord', '>= 3.1', :require => 'active_record'
 group :development, :test do
   gem 'sqlite3'
 end
-
+group :production do
+  gem 'pg'
+end
 # Test requirements
 
 # Padrino Stable Gem
