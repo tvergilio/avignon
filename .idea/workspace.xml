@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b53e33f0-d4af-4f36-9275-97eb60845501" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/avignon.iml" afterPath="$PROJECT_DIR$/.idea/avignon.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.rb" afterPath="$PROJECT_DIR$/config/database.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="avignon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,10 +49,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="3" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0" vertical-offset="219" max-vertical-offset="731">
+            <state line="18" column="8" selection-start="335" selection-end="335" vertical-scroll-proportion="0.23003802" vertical-offset="185" max-vertical-offset="731">
               <folding />
             </state>
           </provider>
@@ -81,10 +76,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="12" selection-start="919" selection-end="919" vertical-scroll-proportion="0.8403042" vertical-offset="0" max-vertical-offset="544">
+            <state line="26" column="12" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
               <folding />
             </state>
           </provider>
@@ -148,9 +143,9 @@
         <option value="$PROJECT_DIR$/app/views/directors/show.haml" />
         <option value="$PROJECT_DIR$/app/views/companies/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/directors.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/database.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -690,16 +685,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/config/database.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="3" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0" vertical-offset="219" max-vertical-offset="731">
+        <state line="30" column="1" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0" vertical-offset="276" max-vertical-offset="1173">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.rb">
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="1" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0" vertical-offset="276" max-vertical-offset="1173">
+        <state line="26" column="12" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
           <folding />
         </state>
       </provider>
@@ -711,9 +706,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="12" selection-start="919" selection-end="919" vertical-scroll-proportion="0.8403042" vertical-offset="0" max-vertical-offset="544">
+        <state line="18" column="8" selection-start="335" selection-end="335" vertical-scroll-proportion="0.23003802" vertical-offset="185" max-vertical-offset="731">
           <folding />
         </state>
       </provider>

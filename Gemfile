@@ -16,13 +16,13 @@ gem 'rake'
 # Component requirements
 gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'haml'
+gem 'pg'
 gem 'activerecord', '>= 3.1', :require => 'active_record'
 group :development, :test do
   gem 'sqlite3'
 end
-group :production do
-  gem 'pg'
-end
+
+
 # Test requirements
 
 # Padrino Stable Gem
