@@ -1,0 +1,16 @@
+<h1><%= @company.name %></h1>
+<table>
+  <tr><td><%= @company.address %></td></tr>
+  <tr><td><%= @company.city %></td></tr>
+  <tr><td><%= @company.country %></td></tr>
+  <tr><td><%= @company.phone %></td></tr>
+</table>
+<br>
+<p><b>Directors:</b></p>
+<% @company.directors.each do |director| %>
+    <table>
+        <tr>
+            <td><%= director.forename + ' ' + director.surname %></td>
+        </tr>
+    </table>
+<% end%>
