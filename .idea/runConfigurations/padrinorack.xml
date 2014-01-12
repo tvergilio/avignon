@@ -1,0 +1,25 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="padrinorack" type="RackRunConfigurationType" factoryName="Rack">
+    <module name="avignon" />
+    <RACK_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+    <RACK_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="C:\Ruby\clones\ancient-beach-1323" />
+    <RACK_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+    <RACK_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+    <RACK_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+    <envs />
+    <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+    <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+    <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+    <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+    <RACK_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
+    <RACK_CONFIG_SETTINGS_ID NAME="IP" VALUE="127.0.0.1" />
+    <RACK_CONFIG_SETTINGS_ID NAME="CONFIG_FILE" VALUE="$MODULE_DIR$/config.ru" />
+    <RACK_CONFIG_SETTINGS_ID NAME="RACK_SERVER_TYPE" VALUE="default" />
+    <RACK_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+    <RunnerSettings RunnerId="RubyDebugRunner" />
+    <RunnerSettings RunnerId="RubyRunner" />
+    <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+    <ConfigurationWrapper RunnerId="RubyRunner" />
+    <method />
+  </configuration>
+</component>
