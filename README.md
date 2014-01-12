@@ -1,29 +1,28 @@
 avignon
 =======
 
-To start the application: padrino start
+Deployed to Heroku. The whole user interface will be replaced by the monaco project (https://github.com/tvergilio/monaco).
+Avignon will be simply a RESTful webservice.
 
-For viewing all companies:
+GET (for getting all companies):
 ==========================
-http://localhost:3000/companies
+http://ancient-beach-1323.herokuapp.com/webservice/companies
 
-For viewing a company:
+GET (for getting a single company):
 =======================
-http://localhost:3000/companies/show/1
+http://ancient-beach-1323.herokuapp.com/webservice/companies/1
 (where 1 is the company_id)
 
-TODO: show a list of directors associated with the company
+TODO
+====
+Implement and test remaining HTTP methods on webservice.rb
 
-For viewing a director:
-=======================
-http://localhost:3000/directors/show/1
-(where 1 is the director_id)
+Request them using the monaco app (AngularJS project)
 
-TODO: show a link to the company the director is associated with
 
-File upload page:
+File upload page (will change):
 =================
-http://localhost:3000/directors/attach
+http://ancient-beach-1323.herokuapp.com/directors/attach
 
 TODO: attach it to a single director using the director_id
 
@@ -31,15 +30,11 @@ currently getting: Forbidden - attack prevented by Rack::Protection::Authenticit
 
 Test POST request using cURL:
 =============================
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d  "{\"company\":{\"name\":\"Melancia\",\"address\":\"26 Blenkinsop Way\",\"city\":\"Leeds\",\"country\":\"UK\",\"email\":\"melancia@fruta.co.uk\",\"phone\":\"07734699224\"}}" http://localhost:3000/webservice/companies/
+$ curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d "{\"company\":{\"name\":\"Melancia\",\"address\":\"26 Blenkinsop Way\",\"city\":\"Leeds\",\"country\":\"UK\",\"email\":\"melancia@fruta.co.uk\",\"phone\":\"07734699224\"}}" http://ancient-beach-1323.herokuapp.com/webservice/companies/
 
-currently getting: Forbidden - attack prevented by Rack::Protection::AuthenticityToken POST /upload Method Not Allowed
+still getting: Forbidden - attack prevented by Rack::Protection::AuthenticityToken POST /upload Method Not Allowed
 
 TODO: switch off authentication for POST requests (not recommended, for debugging only!) or find a different way to send the requests (not using cURL).
 
-TODO
-====
-Implement and test remaining HTTP methods on webservice.rb
-
-Stop POST from creating duplicate records
+THIS IS PROVISIONAL! POST requests will be sent through monaco app created using AngularJS (work in progress).
 
