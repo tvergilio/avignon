@@ -17,7 +17,7 @@ Avignon::App.helpers do
 
   def get_company_json(id)
     @company = Company.find(params[:id])
-    return @company.to_json
+    return @company.to_json(:include => :directors)
   end
   
 end
