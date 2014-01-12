@@ -14,5 +14,10 @@ Avignon::App.helpers do
   def edit
     @company = Company.find(params[:id])
   end
+
+  def get_company_json(id)
+    @company = Company.find(params[:id])
+    return @company.to_json
+  end
   
 end
