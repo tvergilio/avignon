@@ -10,6 +10,7 @@ Avignon::App.controllers :webservice do
 
   get '/companies/:id' do
     response.headers["Content-Type"] = "application/JSON; charset=utf-8"
+    response.headers["Access-Control-Allow-Origin"] = "*"
     response.headers["Access-Control-Allow-Methods"] = "GET"
     return get_company_json(params[:id])
 
@@ -17,6 +18,7 @@ Avignon::App.controllers :webservice do
 
   post '/companies', :csrf_protection => false do
     response.headers["Content-Type"] = "application/JSON; charset=utf-8"
+    response.headers["Access-Control-Allow-Origin"] = "*"
     response.headers["Access-Control-Allow-Methods"] = "POST"
     request.body.rewind
     body = request.body.read && request.body.read.length >= 2 ? JSON.parse(request.body.read) : nil
@@ -40,6 +42,7 @@ Avignon::App.controllers :webservice do
 
   put '/companies/:id' do
     response.headers["Content-Type"] = "application/JSON; charset=utf-8"
+    response.headers["Access-Control-Allow-Origin"] = "*"
     response.headers["Access-Control-Allow-Methods"] = "PUT"
     body = JSON.parse request.body.read
     Company ||= Company.get(params[:id]) || halt(404)
@@ -56,6 +59,7 @@ Avignon::App.controllers :webservice do
 
   delete '/companies/:id' do
     response.headers["Content-Type"] = "application/JSON; charset=utf-8"
+    response.headers["Access-Control-Allow-Origin"] = "*"
     response.headers["Access-Control-Allow-Methods"] = "DELETE"
     Company ||= Company.get(params[:id]) || halt(404)
     halt 500 unless Company.destroy
