@@ -22,8 +22,6 @@ group :development, :test do
   gem 'sqlite3'
 end
 
-# Ember
-gem 'ember-rails'
 
 # Test requirements
 
