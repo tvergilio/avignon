@@ -8,6 +8,14 @@ Avignon::App.controllers :webservice do
     return Company.all.to_json(:include => :directors)
   end
 
+  get '/directors/:id' do
+    response.headers["Content-Type"] = "application/JSON; charset=utf-8"
+    response.headers["Access-Control-Allow-Origin"] = "*"
+    response.headers["Access-Control-Allow-Methods"] = "GET"
+    return get_director_json(params[:id]);
+
+  end
+
   get '/companies/:id' do
     response.headers["Content-Type"] = "application/JSON; charset=utf-8"
     response.headers["Access-Control-Allow-Origin"] = "*"
