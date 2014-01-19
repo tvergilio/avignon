@@ -14,7 +14,7 @@ Avignon::App.controllers :webservice do
   get '/companies' do
     response.headers["Content-Type"] = "application/JSON; charset=utf-8"
     response.headers["Access-Control-Allow-Origin"] = ["http://localhost:8000","http://monaco-ancient-beach.herokuapp.com"]
-    response.headers["Access-Control-Allow-Methods"] = "GET"
+    response.headers["Access-Control-Allow-Methods"] = "*"
     return Company.all.to_json(:include => :directors)
   end
 
@@ -30,7 +30,7 @@ Avignon::App.controllers :webservice do
   post '/companies/', :csrf_protection => false do
     response.headers["Content-Type"] = "application/JSON; charset=utf-8"
     response.headers["Access-Control-Allow-Origin"] = ["http://localhost:8000","http://monaco-ancient-beach.herokuapp.com"]
-    response.headers["Access-Control-Allow-Methods"] = "POST"
+    response.headers["Access-Control-Allow-Methods"] = "*"
     request.body.rewind
     body = request.body.read
     bodyEnd = body.index('&authenticity_token');
@@ -57,7 +57,7 @@ Avignon::App.controllers :webservice do
   put '/companies/:id/edit',  :csrf_protection => false do
     response.headers["Content-Type"] = "application/JSON; charset=utf-8"
     response.headers["Access-Control-Allow-Origin"] = ["http://localhost:8000","http://monaco-ancient-beach.herokuapp.com"]
-    response.headers["Access-Control-Allow-Methods"] = "PUT"
+    response.headers["Access-Control-Allow-Methods"] = "*"
     request.body.rewind
     body = request.body.read
     bodyEnd = body.index('&authenticity_token');
