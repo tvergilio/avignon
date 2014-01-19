@@ -67,7 +67,7 @@ Avignon::App.controllers :webservice do
     end
     trimmedBody = JSON.parse(trimmedBody)
 
-    theCompany = Company.get(params[:id])
+    theCompany = Company.find(params[:id])
     return theCompany.update(params[:id], {
         :name => trimmedBody['name'],
         :address => trimmedBody['address'],
