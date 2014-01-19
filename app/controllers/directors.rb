@@ -34,10 +34,16 @@ Avignon::App.controllers :directors do
   end
   
   get '/attach' do
+    response.headers["Content-Type"] = "application/JSON; charset=utf-8"
+    response.headers["Access-Control-Allow-Origin"] = "*"
+    response.headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE"
   render 'directors/upload' 
   end
   
   post '/upload', :csrf_protection => false do
+    response.headers["Content-Type"] = "application/JSON; charset=utf-8"
+    response.headers["Access-Control-Allow-Origin"] = "*"
+    response.headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE"
   unless params[:file] &&
            (tmpfile = params[:file][:tempfile]) &&
            (name = params[:file][:filename])

@@ -55,8 +55,8 @@ module Avignon
       end
    end
 
-    #use Rack::Protection, except: :http_origin
-    #use Rack::Protection::HttpOrigin, origin_whitelist: ["http://monaco-ancient-beach.herokuapp.com", "http://localhost:8000"]
+    use Rack::Protection, except: :http_origin
+    use Rack::Protection::HttpOrigin, origin_whitelist: ["http://monaco-ancient-beach.herokuapp.com", "http://localhost:8000", "*"]
 
     ##
     # You can manage errors like:

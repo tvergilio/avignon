@@ -3,42 +3,43 @@ Avignon::App.controllers :webservice do
 
 # encoding: UTF-8
 
+  get '/csrf_token', :provides => :json do
+    logger.debug 'Retrieving csrf_token'
+    result = {
+        :csrf => session[:csrf]
+    }
+    JSON.pretty_generate result
+  end
+
   get '/companies' do
-    response.headers["Content-Type"] = "application/JSON; charset=utf-8"
-    response.headers["Access-Control-Allow-Origin"] = "*"
-    response.headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE"
-    return ::Company.all.to_json(:include => :directors)
+    return Company.all.to_json(:include => :directors)
   end
 
   get '/directors/:id' do
-    response.headers["Content-Type"] = "application/JSON; charset=utf-8"
-    response.headers["Access-Control-Allow-Origin"] = "*"
-    response.headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE"
     return get_director_json(params[:id]);
-
   end
 
   get '/companies/:id' do
-    response.headers["Content-Type"] = "application/JSON; charset=utf-8"
-    response.headers["Access-Control-Allow-Origin"] = "*"
-    response.headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE"
     return get_company_json(params[:id])
-
   end
 
-  post '/companies', :csrf_protection => false do
-    response.headers["Content-Type"] = "application/JSON; charset=utf-8"
-    response.headers["Access-Control-Allow-Origin"] = "*"
-    response.headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE"
+
+  post '/companies/', :csrf_protection => false do
     request.body.rewind
-    body = JSON.parse(request.body.read)
+    body = request.body.read
+    bodyEnd = body.index('&authenticity_token');
+    trimmedBody = ''
+    if bodyEnd > 0
+    trimmedBody = body[0, bodyEnd]
+    end
+    trimmedBody = JSON.parse(trimmedBody)
     theCompany = Company.new({
-                              :name => body['name'],
-                              :address => body['address'],
-                              :city => body['city'],
-                              :country => body['country'],
-                              :email => body['email'],
-                              :phone => body['phone']
+                              :name => trimmedBody['name'],
+                              :address => trimmedBody['address'],
+                              :city => trimmedBody['city'],
+                              :country => trimmedBody['country'],
+                              :email => trimmedBody['email'],
+                              :phone => trimmedBody['phone']
                           })
 
       theCompany.save!
@@ -47,20 +48,27 @@ Avignon::App.controllers :webservice do
 
   end
 
-  put '/companies/:id' do
+  put '/companies/:id/edit',  :csrf_protection => false do
     response.headers["Content-Type"] = "application/JSON; charset=utf-8"
-    response.headers["Access-Control-Allow-Origin"] = "*"
-    response.headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE"
+    response.headers["Access-Control-Allow-Origin"] = "http://localhost:8000"
+    response.headers["Access-Control-Allow-Methods"] = "PUT"
     request.body.rewind
-    body = JSON.parse request.body.read
+    body = request.body.read
+    bodyEnd = body.index('&authenticity_token');
+    trimmedBody = ''
+    if bodyEnd > 0
+      trimmedBody = body[0, bodyEnd]
+    end
+    trimmedBody = JSON.parse(trimmedBody)
+
     Company ||= Company.get(params[:id]) || halt(404)
     return Company.errors.full_messages unless Company.update(params[:id], {
-        :name => body['name'],
-        :address => body['address'],
-        :city => body['city'],
-        :country => body['country'],
-        :email => body['email'],
-        :phone => body['phone']
+        :name => trimmedBody['name'],
+        :address => trimmedBody['address'],
+        :city => trimmedBody['city'],
+        :country => trimmedBody['country'],
+        :email => trimmedBody['email'],
+        :phone => trimmedBody['phone']
     })
 
   end
