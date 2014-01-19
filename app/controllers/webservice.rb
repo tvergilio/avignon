@@ -54,7 +54,7 @@ Avignon::App.controllers :webservice do
 
   end
 
-  put '/companies/:id/edit',  :csrf_protection => false do
+  put '/companies/:id',  :csrf_protection => false do
     response.headers["Content-Type"] = "application/JSON; charset=utf-8"
     response.headers["Access-Control-Allow-Origin"] = ["http://localhost:8000","http://monaco-ancient-beach.herokuapp.com"]
     response.headers["Access-Control-Allow-Methods"] = "*"
@@ -67,8 +67,8 @@ Avignon::App.controllers :webservice do
     end
     trimmedBody = JSON.parse(trimmedBody)
 
-    Company ||= Company.get(params[:id]) || halt(404)
-    return Company.errors.full_messages unless Company.update(params[:id], {
+    theCompany ||= Company.get(params[:id]) || halt(404)
+    return theCompany.errors.full_messages unless theCompany.update(params[:id], {
         :name => trimmedBody['name'],
         :address => trimmedBody['address'],
         :city => trimmedBody['city'],
