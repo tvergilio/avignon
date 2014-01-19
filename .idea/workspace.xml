@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b53e33f0-d4af-4f36-9275-97eb60845501" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.rb" afterPath="$PROJECT_DIR$/app/app.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/apps.rb" afterPath="$PROJECT_DIR$/config/apps.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/webservice.rb" afterPath="$PROJECT_DIR$/app/controllers/webservice.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -17,7 +15,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/avignon@padrinorack.coverage" NAME="padrinorack Coverage Results" MODIFIED="1390172175358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:\Ruby\clones\avignon-heroku" MODULE_NAME="avignon" />
+    <SUITE FILE_PATH="coverage/avignon@padrinorack.coverage" NAME="padrinorack Coverage Results" MODIFIED="1390174664758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:\Ruby\clones\avignon-heroku" MODULE_NAME="avignon" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -34,7 +32,7 @@
       <file leaf-file-name="webservice.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/webservice.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="781" selection-end="781" vertical-scroll-proportion="0.3326087" vertical-offset="357" max-vertical-offset="1666">
+            <state line="66" column="7" selection-start="2298" selection-end="2298" vertical-scroll-proportion="0.25" vertical-offset="1007" max-vertical-offset="1666">
               <folding />
             </state>
           </provider>
@@ -80,6 +78,15 @@
         <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="16" column="0" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="476">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/padrino-core-0.11.4/lib/padrino-core/application/routing.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="0" selection-start="1835" selection-end="1835" vertical-scroll-proportion="0.0" vertical-offset="739" max-vertical-offset="18411">
               <folding />
             </state>
           </provider>
@@ -144,10 +151,10 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.haml" />
         <option value="$PROJECT_DIR$/app/controllers/directors.rb" />
         <option value="$PROJECT_DIR$/public/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/controllers/webservice.rb" />
         <option value="$PROJECT_DIR$/config.ru" />
         <option value="$PROJECT_DIR$/app/app.rb" />
         <option value="$PROJECT_DIR$/config/apps.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/webservice.rb" />
       </list>
     </option>
   </component>
@@ -433,12 +440,24 @@
       <created>1390170693297</created>
       <updated>1390170693297</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="set :protection, :except =&gt; [:remote_token, :frame_options, :http_origin]">
+      <created>1390172311533</created>
+      <updated>1390172311533</updated>
+    </task>
+    <task id="LOCAL-00016" summary="set :protection, :except =&gt; [:remote_token, :frame_options, :http_origin]&#10;">
+      <created>1390173745990</created>
+      <updated>1390173745990</updated>
+    </task>
+    <task id="LOCAL-00017" summary="set :protection, :except =&gt; [:remote_token, :frame_options, :http_origin]&#10;">
+      <created>1390174425775</created>
+      <updated>1390174425775</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48390558" sideWeight="0.60833335" order="7" side_tool="false" content_ui="tabs" />
@@ -446,8 +465,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44635195" sideWeight="0.8015625" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44635195" sideWeight="0.8015625" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18020834" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44635195" sideWeight="0.1984375" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4613734" sideWeight="0.61822915" order="2" side_tool="false" content_ui="tabs" />
@@ -487,7 +506,9 @@
     <MESSAGE value="Created get csrf_token service to allow front end hosted in a different server to access webservice API." />
     <MESSAGE value="Created get csrf_token service to allow front end hosted in a different server to access webservice API.&#10;" />
     <MESSAGE value="added set :protection, :except =&gt; [:remote_token, :frame_options]" />
-    <option name="LAST_COMMIT_MESSAGE" value="added set :protection, :except =&gt; [:remote_token, :frame_options]" />
+    <MESSAGE value="set :protection, :except =&gt; [:remote_token, :frame_options, :http_origin]" />
+    <MESSAGE value="set :protection, :except =&gt; [:remote_token, :frame_options, :http_origin]&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="set :protection, :except =&gt; [:remote_token, :frame_options, :http_origin]&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -677,11 +698,6 @@
         <state line="14" column="1" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/padrino-core-0.11.4/lib/padrino-core/application/routing.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1043" column="0" selection-start="37256" selection-end="37256" vertical-scroll-proportion="0.0" vertical-offset="17569" max-vertical-offset="18411" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/sinatra-1.4.4/lib/sinatra/base.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="889" column="0" selection-start="28297" selection-end="28297" vertical-scroll-proportion="0.0" vertical-offset="14951" max-vertical-offset="34680" />
@@ -783,9 +799,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/padrino-core-0.11.4/lib/padrino-core/application/routing.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="0" selection-start="1835" selection-end="1835" vertical-scroll-proportion="0.0" vertical-offset="739" max-vertical-offset="18411">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/webservice.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="781" selection-end="781" vertical-scroll-proportion="0.3326087" vertical-offset="357" max-vertical-offset="1666">
+        <state line="66" column="7" selection-start="2298" selection-end="2298" vertical-scroll-proportion="0.25" vertical-offset="1007" max-vertical-offset="1666">
           <folding />
         </state>
       </provider>

@@ -67,8 +67,8 @@ Avignon::App.controllers :webservice do
     end
     trimmedBody = JSON.parse(trimmedBody)
 
-    theCompany ||= Company.get(params[:id]) || halt(404)
-    return theCompany.errors.full_messages unless theCompany.update(params[:id], {
+    theCompany = Company.get(params[:id])
+    return theCompany.update(params[:id], {
         :name => trimmedBody['name'],
         :address => trimmedBody['address'],
         :city => trimmedBody['city'],
