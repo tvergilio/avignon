@@ -47,6 +47,8 @@ module Avignon
     #   end
     #
 
+
+
     # Allow CORS
    use Rack::Cors do
       allow do

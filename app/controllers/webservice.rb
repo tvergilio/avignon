@@ -12,6 +12,9 @@ Avignon::App.controllers :webservice do
   end
 
   get '/companies' do
+    response.headers["Content-Type"] = "application/JSON; charset=utf-8"
+    response.headers["Access-Control-Allow-Origin"] = ["http://localhost:8000","http://monaco-ancient-beach.herokuapp.com"]
+    response.headers["Access-Control-Allow-Methods"] = "GET"
     return Company.all.to_json(:include => :directors)
   end
 
