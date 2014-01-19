@@ -13,11 +13,28 @@ GET (for getting a single company):
 http://ancient-beach-1323.herokuapp.com/webservice/companies/1
 (where 1 is the company_id)
 
+GET (for getting a single director):
+==========================
+http://ancient-beach-1323.herokuapp.com/webservice/directors/1
+(where 1 is the director_id)
+
+POST (for creating a single company):
+=======================
+http://ancient-beach-1323.herokuapp.com/webservice/companies/
+
+PUT (for updating a single company):
+=======================
+http://ancient-beach-1323.herokuapp.com/webservice/companies/1
+(where 1 is the company_id)
+
+DELETE (for deleting a single company):
+=======================
+http://ancient-beach-1323.herokuapp.com/webservice/companies/1
+(where 1 is the company_id)
+
 TODO
 ====
-Implement and test remaining HTTP methods on webservice.rb
-
-Request them using the monaco app (AngularJS project)
+Request the POST, PUT and DELETE methods using the monaco app (AngularJS project)
 
 
 File upload page (will change):
@@ -32,9 +49,6 @@ Test POST request using cURL:
 =============================
 $ curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d "{\"company\":{\"name\":\"Melancia\",\"address\":\"26 Blenkinsop Way\",\"city\":\"Leeds\",\"country\":\"UK\",\"email\":\"melancia@fruta.co.uk\",\"phone\":\"07734699224\"}}" http://ancient-beach-1323.herokuapp.com/webservice/companies/
 
-still getting: Forbidden - attack prevented by Rack::Protection::AuthenticityToken POST /upload Method Not Allowed
+TODO: find a better way to protect against csrf. Currently switched it off to prevent "Forbidden - attack prevented by Rack::Protection::AuthenticityToken POST /upload Method Not Allowed". There must be a better way!
 
-TODO: switch off authentication for POST requests (not recommended, for debugging only!) or find a different way to send the requests (not using cURL).
-
-THIS IS PROVISIONAL! POST requests will be sent through monaco app created using AngularJS (work in progress).
 

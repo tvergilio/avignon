@@ -47,6 +47,17 @@ module Avignon
     #   end
     #
 
+    # Allow CORS
+   use Rack::Cors do
+      allow do
+        origins '*'
+        resource '*', :headers => :any, :methods => [:get, :post, :put, :delete, :options]
+      end
+   end
+
+    #use Rack::Protection, except: :http_origin
+    #use Rack::Protection::HttpOrigin, origin_whitelist: ["http://monaco-ancient-beach.herokuapp.com", "http://localhost:8000"]
+
     ##
     # You can manage errors like:
     #

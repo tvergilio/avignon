@@ -22,6 +22,8 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+# Allow CORS
+gem 'rack-cors', :require => 'rack/cors'
 
 # Test requirements
 

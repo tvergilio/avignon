@@ -28,8 +28,10 @@
 Padrino.configure_apps do
   # enable :sessions
   set :session_secret, '2ebd981291fc9c7e2fc4a3e7d022c1ee782aa73a56b183c0f962768c117b336d'
-  set :protection, true
-  set :protect_from_csrf, true
+  #set :protect_from_csrf, true
+  #set :protection, :origin_whitelist => ['http://localhost:8000' '*']
+
+
 end
 
 # Mounts the core application for this project
