@@ -25,10 +25,12 @@ end
 # Allow CORS
 gem 'rack-cors', :require => 'rack/cors'
 
-# Test requirements
-
 # Padrino Stable Gem
 gem 'padrino', '0.11.4'
+
+# Database Versioning
+gem 'paper_trail', '~> 3.0.0'
+
 
 # Or Padrino Edge
 # gem 'padrino', :github => 'padrino/padrino-framework'
@@ -37,3 +39,5 @@ gem 'padrino', '0.11.4'
 # %w(core gen helpers cache mailer admin).each do |g|
 #   gem 'padrino-' + g, '0.11.4'
 # end
+
+

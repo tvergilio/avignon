@@ -14,12 +14,30 @@ Avignon::App.controllers :webservice do
   get '/companies' do
     response.headers["Content-Type"] = "application/JSON; charset=utf-8"
     response.headers["Access-Control-Allow-Origin"] = ["http://localhost:8000", "http://monaco-ancient-beach.herokuapp.com"]
-    response.headers["Access-Control-Allow-Methods"] = "*"
+    response.headers["Access-Control-Allow-Methods"] = "GET"
     return Company.all.to_json(:include => :directors)
   end
 
   get '/directors/:id' do
     return get_director_json(params[:id]);
+  end
+
+  post '/directors', :csrf_protection => false do
+    response.headers["Content-Type"] = "application/JSON; charset=utf-8"
+    response.headers["Access-Control-Allow-Origin"] = ["http://localhost:8000", "http://monaco-ancient-beach.herokuapp.com"]
+    response.headers["Access-Control-Allow-Methods"] = "POST"
+    request.body.rewind
+    body = JSON.parse(request.body.read)
+
+    theDirector = Director.new({
+                                 :forename => body['forename'],
+                                 :surname => body['surname'],
+                                 :company_id => body['company_id']
+                             })
+    theDirector.save!
+    status 201
+    return theDirector.to_json
+
   end
 
   get '/companies/:id' do
@@ -30,7 +48,7 @@ Avignon::App.controllers :webservice do
   post '/companies/', :csrf_protection => false do
     response.headers["Content-Type"] = "application/JSON; charset=utf-8"
     response.headers["Access-Control-Allow-Origin"] = ["http://localhost:8000", "http://monaco-ancient-beach.herokuapp.com"]
-    response.headers["Access-Control-Allow-Methods"] = "*"
+    response.headers["Access-Control-Allow-Methods"] = "POST"
     request.body.rewind
     body = request.body.read
     bodyEnd = body.index('&authenticity_token');
@@ -57,7 +75,7 @@ Avignon::App.controllers :webservice do
   put '/companies/:id', :csrf_protection => false do
     response.headers["Content-Type"] = "application/JSON; charset=utf-8"
     response.headers["Access-Control-Allow-Origin"] = ["http://localhost:8000", "http://monaco-ancient-beach.herokuapp.com"]
-    response.headers["Access-Control-Allow-Methods"] = "*"
+    response.headers["Access-Control-Allow-Methods"] = "PUT"
     request.body.rewind
     body = request.body.read
     bodyEnd = body.index('&authenticity_token');
@@ -82,17 +100,27 @@ Avignon::App.controllers :webservice do
   delete '/companies/:id' do
     response.headers["Content-Type"] = "application/JSON; charset=utf-8"
     response.headers["Access-Control-Allow-Origin"] = "*"
-    response.headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE"
+    response.headers["Access-Control-Allow-Methods"] = "DELETE"
     request.body.rewind
     Company ||= Company.get(params[:id]) || halt(404)
     halt 500 unless Company.destroy(params[:id])
     status 200
   end
 
+  delete '/directors/:id' do
+    response.headers["Content-Type"] = "application/JSON; charset=utf-8"
+    response.headers["Access-Control-Allow-Origin"] = "*"
+    response.headers["Access-Control-Allow-Methods"] = "DELETE"
+    request.body.rewind
+    Director ||= Director.get(params[:id]) || halt(404)
+    halt 500 unless Director.destroy(params[:id])
+    status 200
+  end
+
   post '/upload', :csrf_protection => false do
     response.headers["Content-Type"] = "application/JSON; charset=utf-8"
     response.headers["Access-Control-Allow-Origin"] = ["http://localhost:8000", "http://monaco-ancient-beach.herokuapp.com"]
-    response.headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE"
+    response.headers["Access-Control-Allow-Methods"] = "POST"
     unless params[:files] &&
         (tmpfile = params[:files][0][:tempfile]) &&
         (name = params[:files][0][:filename])
