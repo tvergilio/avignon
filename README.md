@@ -37,13 +37,12 @@ TODO
 Request the POST, PUT and DELETE methods using the monaco app (AngularJS project)
 
 
-File upload page (will change):
+File upload:
 =================
-http://ancient-beach-1323.herokuapp.com/directors/attach
+http://ancient-beach-1323.herokuapp.com/upload
 
 TODO: attach it to a single director using the director_id
 
-currently getting: Forbidden - attack prevented by Rack::Protection::AuthenticityToken POST /webservice/companies Forbidden
 
 Test POST request using cURL:
 =============================
