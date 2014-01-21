@@ -13,7 +13,7 @@ Avignon::App.controllers :webservice do
 
   get '/companies' do
     response.headers["Content-Type"] = "application/JSON; charset=utf-8"
-    response.headers["Access-Control-Allow-Origin"] = ["http://localhost:8000","http://monaco-ancient-beach.herokuapp.com"]
+    response.headers["Access-Control-Allow-Origin"] = ["http://localhost:8000", "http://monaco-ancient-beach.herokuapp.com"]
     response.headers["Access-Control-Allow-Methods"] = "*"
     return Company.all.to_json(:include => :directors)
   end
@@ -29,34 +29,34 @@ Avignon::App.controllers :webservice do
 
   post '/companies/', :csrf_protection => false do
     response.headers["Content-Type"] = "application/JSON; charset=utf-8"
-    response.headers["Access-Control-Allow-Origin"] = ["http://localhost:8000","http://monaco-ancient-beach.herokuapp.com"]
+    response.headers["Access-Control-Allow-Origin"] = ["http://localhost:8000", "http://monaco-ancient-beach.herokuapp.com"]
     response.headers["Access-Control-Allow-Methods"] = "*"
     request.body.rewind
     body = request.body.read
     bodyEnd = body.index('&authenticity_token');
     trimmedBody = ''
     if bodyEnd > 0
-    trimmedBody = body[0, bodyEnd]
+      trimmedBody = body[0, bodyEnd]
     end
     trimmedBody = JSON.parse(trimmedBody)
     theCompany = Company.new({
-                              :name => trimmedBody['name'],
-                              :address => trimmedBody['address'],
-                              :city => trimmedBody['city'],
-                              :country => trimmedBody['country'],
-                              :email => trimmedBody['email'],
-                              :phone => trimmedBody['phone']
-                          })
+                                 :name => trimmedBody['name'],
+                                 :address => trimmedBody['address'],
+                                 :city => trimmedBody['city'],
+                                 :country => trimmedBody['country'],
+                                 :email => trimmedBody['email'],
+                                 :phone => trimmedBody['phone']
+                             })
 
-      theCompany.save!
-      status 201
-      return theCompany.to_json(:include => :directors)
+    theCompany.save!
+    status 201
+    return theCompany.to_json(:include => :directors)
 
   end
 
-  put '/companies/:id',  :csrf_protection => false do
+  put '/companies/:id', :csrf_protection => false do
     response.headers["Content-Type"] = "application/JSON; charset=utf-8"
-    response.headers["Access-Control-Allow-Origin"] = ["http://localhost:8000","http://monaco-ancient-beach.herokuapp.com"]
+    response.headers["Access-Control-Allow-Origin"] = ["http://localhost:8000", "http://monaco-ancient-beach.herokuapp.com"]
     response.headers["Access-Control-Allow-Methods"] = "*"
     request.body.rewind
     body = request.body.read
@@ -89,4 +89,23 @@ Avignon::App.controllers :webservice do
     status 200
   end
 
+  post '/upload', :csrf_protection => false do
+    response.headers["Content-Type"] = "application/JSON; charset=utf-8"
+    response.headers["Access-Control-Allow-Origin"] = ["http://localhost:8000", "http://monaco-ancient-beach.herokuapp.com"]
+    response.headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE"
+    unless params[:files] &&
+        (tmpfile = params[:files][0][:tempfile]) &&
+        (name = params[:files][0][:filename])
+      @error = "No file selected"
+    end
+    STDERR.puts "Uploading file, original name " + params[:files][0][:filename]
+    directory = "public/files"
+    path = File.join(directory, params[:files][0][:filename])
+    while blk = tmpfile.read(65536)
+      File.open(path, "wb") { |f| f.write(tmpfile.read) }
+      STDERR.puts blk.inspect
+    end
+    status 200
+    return "The file was successfully uploaded!"
+  end
 end
