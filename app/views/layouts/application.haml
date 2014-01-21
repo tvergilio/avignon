@@ -1,0 +1,17 @@
+!!! Strict
+%html
+	%head
+	%title= [@title, "Business Directory"].compact.join(" to the ")
+	= stylesheet_link_tag 'reset', 'application'
+	= javascript_include_tag 'jquery', 'application'
+	= yield_content :include
+	%body
+	#header
+		%h1 Business Directory
+		%ul.menu
+
+			#container
+#main= yield
+#sidebar
+#footer
+	Copyright (c) 2009-2010 Padrino
