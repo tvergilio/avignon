@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b53e33f0-d4af-4f36-9275-97eb60845501" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/files/gitkeep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/avignon.iml" afterPath="$PROJECT_DIR$/.idea/avignon.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/companies_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/companies_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/director.rb" afterPath="$PROJECT_DIR$/app/models/director.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/padrinorack.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/padrinorack.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/webservice.rb" afterPath="$PROJECT_DIR$/app/controllers/webservice.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="avignon.iws" />
@@ -15,7 +20,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/avignon@padrinorack.coverage" NAME="padrinorack Coverage Results" MODIFIED="1390381910705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:\Ruby\clones\avignon-heroku" MODULE_NAME="avignon" />
+    <SUITE FILE_PATH="coverage/avignon@padrinorack.coverage" NAME="padrinorack Coverage Results" MODIFIED="1390439746919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:\myapps\avignon-heroku" MODULE_NAME="avignon" />
     <SUITE FILE_PATH="coverage/avignon@IRB_console__avignon.coverage" NAME="IRB console: avignon Coverage Results" MODIFIED="1390341075075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="avignon" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -33,16 +38,34 @@
       <file leaf-file-name="webservice.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/webservice.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="128" column="34" selection-start="4681" selection-end="4681" vertical-scroll-proportion="0.6106557" vertical-offset="1878" max-vertical-offset="2465">
+            <state line="148" column="0" selection-start="5314" selection-end="5314" vertical-scroll-proportion="0.8135246" vertical-offset="2119" max-vertical-offset="2618">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/app.rb">
+      <file leaf-file-name="companies_helper.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/companies_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1530">
+            <state line="22" column="6" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="578">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/Ruby/lib/ruby/gems/1.9.1/gems/padrino-core-0.11.4/lib/padrino-core/application/routing.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="0" selection-start="1835" selection-end="1835" vertical-scroll-proportion="0.0" vertical-offset="739" max-vertical-offset="18411">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="director.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/director.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="21" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
               <folding />
             </state>
           </provider>
@@ -54,16 +77,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1285" selection-end="1285" vertical-scroll-proportion="-16.296297" vertical-offset="342" max-vertical-offset="1003">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routing.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/padrino-core-0.11.4/lib/padrino-core/application/routing.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="1670" selection-end="1670" vertical-scroll-proportion="0.0" vertical-offset="671" max-vertical-offset="18411">
+            <state line="46" column="0" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="1003">
               <folding />
             </state>
           </provider>
@@ -81,7 +95,7 @@
       <file leaf-file-name="004_create_versions.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/004_create_versions.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="3" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="391">
+            <state line="17" column="3" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
               <folding />
             </state>
           </provider>
@@ -90,7 +104,7 @@
       <file leaf-file-name="company.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/company.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="255">
+            <state line="2" column="2" selection-start="55" selection-end="74" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
@@ -99,16 +113,16 @@
       <file leaf-file-name="003_create_directors.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/003_create_directors.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="284" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+            <state line="3" column="25" selection-start="100" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="id.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb">
+      <file leaf-file-name="002_create_companies.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/002_create_companies.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="225" column="0" selection-start="5850" selection-end="5850" vertical-scroll-proportion="0.0" vertical-offset="3663" max-vertical-offset="6868">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
               <folding />
             </state>
           </provider>
@@ -135,11 +149,10 @@
         <option value="$PROJECT_DIR$/app/views/companies/show.html.erb" />
         <option value="$PROJECT_DIR$/config/database.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
-        <option value="$PROJECT_DIR$/app/helpers/companies_helper.rb" />
         <option value="$PROJECT_DIR$/admin/app.rb" />
         <option value="$PROJECT_DIR$/config/boot.rb" />
-        <option value="$PROJECT_DIR$/../../lib/ruby/1.9.1/json/common.rb" />
-        <option value="$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/haml-4.0.5/lib/haml/parser.rb" />
+        <option value="C:/lib/ruby/1.9.1/json/common.rb" />
+        <option value="C:/lib/ruby/gems/1.9.1/gems/haml-4.0.5/lib/haml/parser.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.haml" />
         <option value="$PROJECT_DIR$/public/javascripts/application.js" />
         <option value="$PROJECT_DIR$/config.ru" />
@@ -149,11 +162,15 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/db/migrate/004_create_migration.rb" />
         <option value="$PROJECT_DIR$/db/migrate/004_create_versions.rb" />
-        <option value="$PROJECT_DIR$/app/models/director.rb" />
         <option value="$PROJECT_DIR$/app/models/company.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/webservice.rb" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/public/files/gitkeep" />
+        <option value="$PROJECT_DIR$/db/migrate/005_create_files.rb" />
+        <option value="$PROJECT_DIR$/app/models/document.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/005_create_documents.rb" />
+        <option value="$PROJECT_DIR$/app/helpers/companies_helper.rb" />
+        <option value="$PROJECT_DIR$/app/models/director.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/webservice.rb" />
       </list>
     </option>
   </component>
@@ -240,12 +257,94 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avignon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avignon-heroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avignon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avignon-heroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avignon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avignon-heroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avignon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avignon-heroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avignon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avignon-heroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../monaco-ancient-beach" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
@@ -306,7 +405,7 @@
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/../../bin/irb" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="C:/bin/irb" />
       <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="--prompt simple" />
       <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="false" />
       <RunnerSettings RunnerId="RubyDebugRunner" />
@@ -404,7 +503,7 @@
     <configuration default="true" type="RackRunConfigurationType" factoryName="Rack">
       <module name="" />
       <RACK_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RACK_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="C:\Ruby\clones\avignon-heroku" />
+      <RACK_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="C:\myapps\avignon-heroku" />
       <RACK_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
       <RACK_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
       <RACK_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
@@ -556,20 +655,23 @@
       <created>1390387973340</created>
       <updated>1390387973340</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Implemented POST and DELETE methods for directors in webservice.rb.&#10;&#10;Implemented paper_trail for database versioning and added has_paper_trail to company.rb and director.rb.&#10;">
+      <created>1390388614389</created>
+      <updated>1390388614389</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48390558" sideWeight="0.60833335" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5107296" sideWeight="0.5677083" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44635195" sideWeight="0.8015625" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18020834" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44635195" sideWeight="0.1984375" order="7" side_tool="true" content_ui="tabs" />
@@ -579,6 +681,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -619,60 +722,133 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/controllers/webservice.rb</url>
-          <line>75</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/controllers/webservice.rb</url>
-          <line>110</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/controllers/webservice.rb</url>
-          <line>25</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/controllers/webservice.rb</url>
-          <line>120</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="23" />
+      <option name="time" value="25" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/controllers/webservice.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="53" selection-start="1388" selection-end="1388" vertical-scroll-proportion="0.0" vertical-offset="1710" max-vertical-offset="2618">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/document.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/005_create_documents.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="13" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/director.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="36" selection-end="144" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="204">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="1003">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="788" selection-end="788" vertical-scroll-proportion="0.0" vertical-offset="202" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/004_create_versions.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="3" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/company.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/003_create_directors.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="25" selection-start="100" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/002_create_companies.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/webservice.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="128" column="34" selection-start="4681" selection-end="4681" vertical-scroll-proportion="0.0" vertical-offset="1878" max-vertical-offset="2465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="0" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1530" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="1003">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="788" selection-end="788" vertical-scroll-proportion="0.0" vertical-offset="202" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/004_create_versions.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="3" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/company.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/003_create_directors.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="284" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/controllers/companies.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="290" selection-end="782" vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="1598" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/1.9.1/json/common.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="12" selection-start="5054" selection-end="5054" vertical-scroll-proportion="0.0" vertical-offset="2324" max-vertical-offset="7616" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/ember-rails-0.2.2/lib/ember-rails.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="30" selection-start="112" selection-end="112" vertical-scroll-proportion="0.13934426" vertical-offset="0" max-vertical-offset="488" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/activerecord-3.2.16/lib/active_record/persistence.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="353" column="8" selection-start="13965" selection-end="13965" vertical-scroll-proportion="0.0" vertical-offset="5839" max-vertical-offset="6494" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/activerecord-3.2.16/lib/active_record/relation.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="317" column="0" selection-start="11332" selection-end="11332" vertical-scroll-proportion="0.0" vertical-offset="5227" max-vertical-offset="9231" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/activerecord-3.2.16/lib/active_record/scoping/named.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1423" selection-end="1423" vertical-scroll-proportion="0.0" vertical-offset="484" max-vertical-offset="3502" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/stylesheets/application.sass">
@@ -700,19 +876,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="488" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/activemodel-3.2.16/lib/active_model/attribute_methods.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="406" column="0" selection-start="14776" selection-end="14776" vertical-scroll-proportion="0.0" vertical-offset="6740" max-vertical-offset="7786" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/account.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/haml-4.0.5/lib/haml/parser.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="0" selection-start="2551" selection-end="2551" vertical-scroll-proportion="0.0" vertical-offset="1351" max-vertical-offset="13090" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.haml">
@@ -720,69 +886,9 @@
         <state line="11" column="0" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="374" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/activesupport-3.2.16/lib/active_support/core_ext/object/to_json.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/activesupport-3.2.16/lib/active_support/json/encoding.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1205" selection-end="1205" vertical-scroll-proportion="0.0" vertical-offset="348" max-vertical-offset="4930" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/chunked.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="1088" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="663" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/handler/webrick.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="0" selection-start="1932" selection-end="1932" vertical-scroll-proportion="0.0" vertical-offset="892" max-vertical-offset="1479" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/1.9.1/webrick/httpserver.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="0" selection-start="2350" selection-end="2350" vertical-scroll-proportion="0.0" vertical-offset="1113" max-vertical-offset="4590" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="1" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/rack-cors-0.2.9/lib/rack/cors.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="0" selection-start="1840" selection-end="1840" vertical-scroll-proportion="0.0" vertical-offset="909" max-vertical-offset="4335" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/rack-protection-1.5.1/lib/rack/protection/xss_header.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="808" selection-end="808" vertical-scroll-proportion="0.0" vertical-offset="39" max-vertical-offset="527" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/rack-protection-1.5.1/lib/rack/protection/json_csrf.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="697" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/rack-protection-1.5.1/lib/rack/protection/frame_options.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1192" selection-end="1192" vertical-scroll-proportion="0.0" vertical-offset="243" max-vertical-offset="731" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/padrino-core-0.11.4/lib/padrino-core/logger.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="399" column="0" selection-start="12179" selection-end="12179" vertical-scroll-proportion="0.0" vertical-offset="6621" max-vertical-offset="7548" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.ru">
@@ -805,65 +911,50 @@
         <state line="32" column="74" selection-start="1396" selection-end="1396" vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="799" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/activerecord-3.2.16/lib/active_record/connection_adapters/abstract/connection_pool.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="483" column="0" selection-start="16754" selection-end="16754" vertical-scroll-proportion="0.0" vertical-offset="7923" max-vertical-offset="8398" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/rack-protection-1.5.1/lib/rack/protection/path_traversal.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="901" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/sinatra-1.4.4/lib/sinatra/show_exceptions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="5967" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/sinatra-1.4.4/lib/sinatra/base.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1468" column="0" selection-start="48066" selection-end="48066" vertical-scroll-proportion="0.0" vertical-offset="24794" max-vertical-offset="34680" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/padrino-core-0.11.4/lib/padrino-core/router.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="0" selection-start="2305" selection-end="2305" vertical-scroll-proportion="0.0" vertical-offset="1079" max-vertical-offset="1717" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0" vertical-offset="454" max-vertical-offset="11985" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/showexceptions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="229" max-vertical-offset="6528" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/commonlogger.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.0" vertical-offset="382" max-vertical-offset="1190">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="225" column="0" selection-start="5850" selection-end="5850" vertical-scroll-proportion="0.0" vertical-offset="3663" max-vertical-offset="6868">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/003_create_directors.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="284" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="0" selection-start="788" selection-end="788" vertical-scroll-proportion="0.0" vertical-offset="202" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="0" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.0" vertical-offset="1006" max-vertical-offset="1530" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="1003">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/files/gitkeep">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="4" selection-start="4" selection-end="4" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="488" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/document.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Ruby/lib/ruby/gems/1.9.1/gems/activemodel-3.2.16/lib/active_model/attribute_methods.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="406" column="0" selection-start="14776" selection-end="14776" vertical-scroll-proportion="0.3319672" vertical-offset="6740" max-vertical-offset="7786">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/002_create_companies.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="488">
           <folding />
         </state>
       </provider>
@@ -875,52 +966,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/director.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/005_create_documents.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="17" selection-start="53" selection-end="53" vertical-scroll-proportion="0.034836065" vertical-offset="0" max-vertical-offset="488" />
+        <state line="3" column="13" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/003_create_directors.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="25" selection-start="100" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/company.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+        <state line="2" column="2" selection-start="55" selection-end="74" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../lib/ruby/gems/1.9.1/gems/padrino-core-0.11.4/lib/padrino-core/application/routing.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/director.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1670" selection-end="1670" vertical-scroll-proportion="0.0" vertical-offset="671" max-vertical-offset="18411">
+        <state line="3" column="21" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.rb">
+    <entry file="file://C:/Ruby/lib/ruby/gems/1.9.1/gems/padrino-core-0.11.4/lib/padrino-core/application/routing.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.0" vertical-offset="1006" max-vertical-offset="1530">
+        <state line="53" column="0" selection-start="1835" selection-end="1835" vertical-scroll-proportion="0.0" vertical-offset="739" max-vertical-offset="18411">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/helpers/companies_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1285" selection-end="1285" vertical-scroll-proportion="-16.296297" vertical-offset="342" max-vertical-offset="1003">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/files/gitkeep">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="4" selection-start="4" selection-end="4" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="488">
+        <state line="22" column="6" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="578">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/webservice.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="34" selection-start="4681" selection-end="4681" vertical-scroll-proportion="0.6106557" vertical-offset="1878" max-vertical-offset="2465">
+        <state line="148" column="0" selection-start="5314" selection-end="5314" vertical-scroll-proportion="0.8135246" vertical-offset="2119" max-vertical-offset="2618">
           <folding />
         </state>
       </provider>

@@ -22,7 +22,7 @@ Avignon::App.helpers do
 
   def get_director_json(id)
     @director = Director.find(params[:id])
-    return @director.to_json
+    return @director.to_json(:include => :documents)
   end
   
 end

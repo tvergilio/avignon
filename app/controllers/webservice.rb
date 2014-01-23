@@ -30,13 +30,13 @@ Avignon::App.controllers :webservice do
     body = JSON.parse(request.body.read)
 
     theDirector = Director.new({
-                                 :forename => body['forename'],
-                                 :surname => body['surname'],
-                                 :company_id => body['company_id']
-                             })
+                                   :forename => body['forename'],
+                                   :surname => body['surname'],
+                                   :company_id => body['company_id']
+                               })
     theDirector.save!
     status 201
-    return theDirector.to_json
+    return theDirector.to_json(:include => :documents)
 
   end
 
@@ -117,23 +117,32 @@ Avignon::App.controllers :webservice do
     status 200
   end
 
-  post '/upload', :csrf_protection => false do
+  post '/directors/:id/document', :csrf_protection => false do
     response.headers["Content-Type"] = "application/JSON; charset=utf-8"
     response.headers["Access-Control-Allow-Origin"] = ["http://localhost:8000", "http://monaco-ancient-beach.herokuapp.com"]
     response.headers["Access-Control-Allow-Methods"] = "POST"
-    unless params[:files] &&
-        (tmpfile = params[:files][0][:tempfile]) &&
-        (name = params[:files][0][:filename])
+
+    #upload
+    unless params[:file] &&
+        (tmpfile = params[:file][:tempfile]) &&
+        (name = params[:file][:filename])
       @error = "No file selected"
     end
-    STDERR.puts "Uploading file, original name " + params[:files][0][:filename]
+    STDERR.puts "Uploading file, original name " + params[:file][:filename]
     directory = "public/files"
-    path = File.join(directory, params[:files][0][:filename])
+    path = File.join(directory, params[:file][:filename])
     while blk = tmpfile.read(65536)
       File.open(path, "wb") { |f| f.write(tmpfile.read) }
       STDERR.puts blk.inspect
     end
-    status 200
-    return "The file was successfully uploaded!"
+
+    #create Document (database record)
+    theDocument = Document.new({
+                                   :director_id => params[:id],
+                                   :name => params[:file][:filename]
+                               })
+    theDocument.save!
+    status 201
+    return theDocument.to_json
   end
 end
