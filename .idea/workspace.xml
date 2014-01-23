@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b53e33f0-d4af-4f36-9275-97eb60845501" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/avignon.iml" afterPath="$PROJECT_DIR$/.idea/avignon.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/companies_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/companies_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/director.rb" afterPath="$PROJECT_DIR$/app/models/director.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/padrinorack.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/padrinorack.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/webservice.rb" afterPath="$PROJECT_DIR$/app/controllers/webservice.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="avignon.iws" />
@@ -659,13 +653,18 @@
       <created>1390388614389</created>
       <updated>1390388614389</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Created documents table and changed the webservice POST document service so it inserts a record in the documents database with the document name, director id and (standard) date created.&#10;">
+      <created>1390441536753</created>
+      <updated>1390441536753</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48390558" sideWeight="0.60833335" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5107296" sideWeight="0.5677083" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -681,7 +680,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -718,7 +716,8 @@
     <MESSAGE value="implemented file upload POST method on webservice" />
     <MESSAGE value="Implemented POST and DELETE methods for directors in webservice.rb.&#10;&#10;Implemented paper_trail for database versioning and added has_paper_trail to company.rb and director.rb." />
     <MESSAGE value="Implemented POST and DELETE methods for directors in webservice.rb.&#10;&#10;Implemented paper_trail for database versioning and added has_paper_trail to company.rb and director.rb.&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented POST and DELETE methods for directors in webservice.rb.&#10;&#10;Implemented paper_trail for database versioning and added has_paper_trail to company.rb and director.rb.&#10;" />
+    <MESSAGE value="Created documents table and changed the webservice POST document service so it inserts a record in the documents database with the document name, director id and (standard) date created.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created documents table and changed the webservice POST document service so it inserts a record in the documents database with the document name, director id and (standard) date created.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -808,7 +807,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1530" />
+        <state line="49" column="0" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1530">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -920,7 +921,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.0" vertical-offset="1006" max-vertical-offset="1530" />
+        <state line="49" column="0" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.0" vertical-offset="1006" max-vertical-offset="1530">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
