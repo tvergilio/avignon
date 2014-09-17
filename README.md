@@ -10,8 +10,8 @@ http://ancient-beach-1323.herokuapp.com/webservice/companies
 
 GET (for getting a single company):
 =======================
-http://ancient-beach-1323.herokuapp.com/webservice/companies/1
-(where 1 is the company_id)
+http://ancient-beach-1323.herokuapp.com/webservice/companies/2
+(where 2 is the company_id)
 
 GET (for getting a single director):
 ==========================
@@ -24,18 +24,13 @@ http://ancient-beach-1323.herokuapp.com/webservice/companies/
 
 PUT (for updating a single company):
 =======================
-http://ancient-beach-1323.herokuapp.com/webservice/companies/1
-(where 1 is the company_id)
+http://ancient-beach-1323.herokuapp.com/webservice/companies/2
+(where 2 is the company_id)
 
 DELETE (for deleting a single company):
 =======================
-http://ancient-beach-1323.herokuapp.com/webservice/companies/1
-(where 1 is the company_id)
-
-TODO
-====
-Request the POST, PUT and DELETE methods using the monaco app (AngularJS project)
-
+http://ancient-beach-1323.herokuapp.com/webservice/companies/2
+(where 2 is the company_id)
 
 File upload:
 =================
