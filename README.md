@@ -46,3 +46,6 @@ $ curl -v -H "Accept: application/json" -H "Content-type: application/json" -X P
 TODO: find a better way to protect against csrf. Currently switched it off to prevent "Forbidden - attack prevented by Rack::Protection::AuthenticityToken POST /upload Method Not Allowed". There must be a better way!
 
 
+and now?
+
+
